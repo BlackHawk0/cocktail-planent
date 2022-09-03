@@ -1,0 +1,193 @@
+/* body {
+    background-color: black;
+}
+
+.body {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(200, 200, 200, 0.9)
+} */
+
+/* // To center the table in the body */
+/* .toolbar {
+    text-align: center;
+    background-color: #141414;
+    padding: 10px;
+    color: white;
+    display: table;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.nav {
+    display: table;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.table {
+    display: table;
+    border-spacing: 2px;
+    display: table-cell;
+} */
+
+/* // Align items vertically in case of large screen */
+/* #latest,
+#random,
+#recent {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    grid-column-gap: 20px;
+    justify-content: center;
+    grid-row-gap: 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+img {
+    height: 200px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+} */
+
+/* // To be used in case of small devices where the nav table will 
+// be displayed in a row */
+/* @media screen and (max-width: 700px) {
+    .nav {
+        display: table-row;
+    }
+
+    .table {
+        display: table-row;
+    }
+
+    .table>td {
+        display: table-cell;
+    }
+
+    .table>td>p {
+        display: table-row;
+    }
+
+    .table>td>h1 {
+        display: table-row;
+    }
+
+    #latest,
+    #random,
+    #recent {
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+        grid-column-gap: 20px;
+        justify-content: center;
+        grid-row-gap: 10px;
+        position: relative;
+        bottom: 5px;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-color: #5B5651;
+}
+
+.nav {
+    background-color: #D1E1FF;
+    border-radius: 10px;
+    margin: 1%;
+    padding: 5%;
+}
+
+.image-container {
+    height: auto;
+    width: auto;
+    margin: 1%;
+    align-items: center;
+}
+
+.toolbar {
+    height: 65px;
+    width: 100%;
+    background-color: #0D0F2B;
+    margin-bottom: 50px;
+}
+
+header {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.table {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+
+
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    border-color: inherit;
+    padding: 10px;
+    background: #ffffff;
+}
+
+h1,
+p {
+    color: #0D0F2B;
+}
+
+span {
+    color: #f76066;
+}
+
+.col-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #0D0F2B;
+    margin: 1%;
+}
+
+h4 {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 20%;
+    height: auto;
+    margin: 1%;
+    align-content: center;
+    display: inline-block;
+}
