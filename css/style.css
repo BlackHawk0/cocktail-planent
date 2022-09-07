@@ -1,24 +1,10 @@
-body {
-    margin: 0px;
-    background-color: rgb(99, 38, 38);
-    background-image: url(../images/cocktail.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    /* overflow-x: hidden; */
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body{
+    background: #230312;
+    line-height: 22px;
 }
-
-
 .toolbar {
     display: flex;
     align-items: center;
-    background: #1e272e;
     justify-content: center;
     color: #fff;
     font-size: 2.5em;
@@ -33,26 +19,62 @@ body {
     align-items: center;
     margin: 0px 25px;
 }
-
-.col-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+h1 {
+    margin: 2%;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #F3F3F3;
 }
 
+table {
+    border-collapse: collapse;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 100%;
 
+}
+
+th {
+    padding: 18px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+tr,
+td {
+    padding: 10px;
+    text-align: center;
+}
+.table{
+    background-color: transparent;
+}
+.table img{
+    border-radius: 50%;
+}
+.table p{
+    color: #F3F3F3;
+}
+/* div containing the cocktails */
 .image-container {
     display: relative;
+    background-color: transparent;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
-
 }
 
-#random {
-    text-align: center;
+/* div wrapping indivual image to easen styling */
+.wrapping {
+    max-width: 100%;
+    background-color: transparent;
+    transition: 0.3s;
+    margin-top: 30px;
+}
+
+.wrapping:hover {
+    transform: scale(1.1);
 }
 
 .wrapping img {
@@ -62,122 +84,42 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 1rem;
-    
-    
+
 }
+
 .wrapping h4 {
     text-align: center;
     size: 22pt;
+    color: #F3F3F3;
     
 }
+
 #latest, 
 #recent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-}
+    margin-bottom: 100px;
+} 
 
-h1 {
-    margin: 2%;
-    font-size: 1.5em;
-}
 
-h2 {
+.image-container h2 {
     margin: 2%;
     font-size: 2em;
-    color: red;
-}
-
-/* h3,
-h4 {
-    margin: 0.5%;
-    font-size: 17px;
-    position: relative;
-    top: 200px;
-    left: 200px;
-    padding-bottom: 120px;
-    line-height: 22px;
+    text-align: center;
+    font-style: italic;
     color: #F3F3F3;
-} */
-
-table {
-    border: 1px solid #333;
-    background-color: #F3F3F3;
-    border-collapse: collapse;
-    margin-left: 15%;
-    margin-right: 15%;
-
 }
 
-th {
-    padding: 18px;
-    border: 1px solid #333;
-    background-color: #F3F3F3;
-    border-collapse: collapse;
-    font-weight: bold;
+
+/* footer */
+.footer {
+    display: inline;
+}
+
+p.copyright {
     text-align: center;
-
-}
-
-tr,
-td {
-    padding: 10px;
-    border: 1px solid #333;
-    background-color: #fff;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-
-.container{
-        position: relative;
-        height: auto;
-        padding: 10px;
-        background-color: #DADADA;
-        border-radius: 3px;
-        border: 5px solid #ccc;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-        
-}
-
-.container>label {
-    text-align: center;
-    padding: 20px;
-}
-
-#comment {
-    color: #797979;
-    text-align: left;
-    padding: 10px;
-}
-
-#addComments {
-    width: 20%;
-    padding: 10px;
-    background-color: darkblue;
-    color: white;
-    align-self: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.wrapper>button {
-    margin-right: 5px;
-    padding: 5px;
-    background-color: darkblue;
-    color: white;
-    margin-top: 10px;
-}
-
-.wrapping{
-    max-width: 100%;
-    background-color: aqua;
-    border-radius: 1rem;
-    box-shadow: 1px 8px 5px 1px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 1px 8px 5px 1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px 8px 5px 1px rgba(0, 0, 0, 0.75);
+    margin-top: 30px;
+    color: #F3F3F3;
+    
 }

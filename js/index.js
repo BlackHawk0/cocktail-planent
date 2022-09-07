@@ -101,7 +101,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             divwarp.classList.add('wrapping')
             const item = document.createElement('h4')
             const image = document.createElement('img')
-            image.classList.add('divimg')
 
             item.textContent = `${bestList}`
             image.src = `${cocktailimage}`
@@ -132,7 +131,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         let imageContainer = document.querySelector('#latest')
 
-    // loop over the object and apped the cocktails to html
+    // loop over the object and apped the cocktails names to html
         for (let i = 0; i < 8; i++){
             let bestList = bestCocktails[i]
             let cocktailimage = bestThumbs[i]
@@ -140,7 +139,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             divwarp.classList.add('wrapping')
             const item = document.createElement('h4')
             const image = document.createElement('img')
-            image.classList.add('divimg')
 
             item.textContent = `${bestList}`
             image.src = `${cocktailimage}`
@@ -175,90 +173,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
     // event listners
-    const commentContainer = document.getElementById('allComments');
-    document.getElementById('addComments').addEventListener('click', (event)=> {
-    addComment(event);
-    });
-
-    // function to add a comment
-    function addComment(event) {
-        let commentText, wrapDiv;
-        const textBox = document.createElement('div');
-
-        // create reply button
-        const replyButton = document.createElement('button');
-        replyButton.className = 'reply';
-        replyButton.innerHTML = 'Reply';
-
-        // create like button
-        const likeButton = document.createElement('button');
-        likeButton.innerHTML = 'Like';
-        likeButton.className = 'likeComment';
-
-        // create delete button
-        const deleteButton = document.createElement('button');
-        deleteButton.innerHTML = 'Delete';
-        deleteButton.className = 'deleteComment';
-
-        // allowing nesting of comments
-        if(hasClass(event.target.parentElement, 'container')) {
-            const wrapDiv = document.createElement('div');
-            wrapDiv.className = 'wrapper';
-            wrapDiv.style.marginLeft = 0;
-            commentText = document.getElementById('comment').value;
-            document.getElementById('comment').value = '';
-            textBox.innerHTML = commentText;
-            textBox.style.backgroundColor = "cyan";
-            wrapDiv.append(textBox, replyButton, likeButton, deleteButton);
-            commentContainer.appendChild(wrapDiv);
-        } else {
-            wrapDiv = event.target.parentElement;
-            commentText = event.target.parentElement.firstElementChild.value;
-            textBox.innerHTML = commentText;
-            textBox.style.backgroundColor = "paleturquoise";
-            wrapDiv.innerHTML = '';
-            wrapDiv.append(textBox, replyButton, likeButton, deleteButton);
-        }
-        
-
-    }
-
- 
-    function hasClass(elem, className) {
-        return elem.className.split(' ').indexOf(className) > -1;
-    }
-    document.getElementById('allComments').addEventListener('click', function (e) {
-        if (hasClass(e.target, 'reply')) {
-            const parentDiv = e.target.parentElement;
-            const wrapDiv = document.createElement('div');
-            wrapDiv.style.marginLeft = (Number.parseInt(parentDiv.style.marginLeft) + 15).toString() + 'px';
-            wrapDiv.className = 'wrapper';
-            const textArea = document.createElement('textarea');
-            textArea.style.marginRight = '20px';
-            const addButton = document.createElement('button');
-            addButton.className = 'addReply';
-            addButton.innerHTML = 'Add';
-            const cancelButton = document.createElement('button');
-            cancelButton.innerHTML = 'Cancel';
-            cancelButton.className='cancelReply';
-            wrapDiv.append(textArea, addButton, cancelButton);
-            parentDiv.appendChild(wrapDiv);
-
-        } else if(hasClass(e.target, 'addReply')) {
-            addComment(e);
-        } else if(hasClass(e.target, 'likeComment')) {
-            const likeBtnValue = e.target.innerHTML;
-
-            // incrementing likes on click
-            e.target.innerHTML = likeBtnValue !== 'Like' ? Number.parseInt(likeBtnValue) + 1 + ' likes': 1 + ' likes';
-            
-        } else if(hasClass(e.target, 'cancelReply')) {
-            e.target.parentElement.innerHTML = '';
-            
-        } else if(hasClass(e.target, 'deleteComment')) {
-            e.target.parentElement.remove();
-        }
-    })
 
     // mouseover evenlistner
     const heading = document.querySelector('.toolbar')
