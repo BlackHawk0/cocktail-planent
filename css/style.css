@@ -1,7 +1,11 @@
 body{
     background: #230312;
     line-height: 22px;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
 .toolbar {
     display: flex;
     align-items: center;
@@ -26,7 +30,7 @@ h1 {
     color: #F3F3F3;
 }
 
-table {
+.table {
     border-collapse: collapse;
     margin-left: 15%;
     margin-right: 15%;
@@ -54,6 +58,9 @@ td {
 }
 .table p{
     color: #F3F3F3;
+}
+span{
+    color: rgb(91, 160, 206);
 }
 /* div containing the cocktails */
 .image-container {
@@ -111,10 +118,48 @@ td {
     color: #F3F3F3;
 }
 
+/* comment section */
+.container {
+    width: 600px;
+    border: 2px solid #333;
+    padding: 15px 10px;
+    background-color: #F3F3F3;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 15px
+}
+
+textarea {
+    height: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    background-color: transparent;
+    margin-bottom: 10px;
+    resize: none;
+    outline: none;
+    transition: .5s
+}
+.submit {
+    border-radius: 7px;
+    padding: 10px;
+
+}
+
+.submit:hover {
+    transform: scale(1.1);
+}
+
+.comment-box p {
+    background-color: #F3F3F3;
+}
+
 
 /* footer */
 .footer {
-    display: inline;
+    display: block;
 }
 
 p.copyright {

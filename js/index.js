@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
             ///pass the data to mapData function   (data in json format)
             response.json().then(data => {
-                console.log(data);
                 renderRecentCocktails(data)});
         }
         )
@@ -150,28 +149,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     }
 
-
-
-    // function renderRandomCocktail(cocktail){
-    //     let randomdrinks = document.querySelector('#random')
-    //     let cocktailName = document.createElement('h2')
-    //     cocktailName.innerHTML = cocktail.drinks[0].strDrink
-    //     randomdrinks.appendChild(cocktailName)
-    //     let image = document.createElement('img')
-    //     image.src = cocktail.drinks[0].strDrinkThumb
-    //     randomdrinks.appendChild(image)
-
-    // }
-
-
-
-
-    // function calls
-    getRecentCocktails()
-    getPopularCocktails()
-    // getRandomCocktail();
-
-
     // event listners
 
     // mouseover evenlistner
@@ -187,6 +164,28 @@ document.addEventListener('DOMContentLoaded', (event) => {
         event.target.style.color = "";
     }, 500);
     }, false);
+
+    // click event listner
+    // post a comment
+    document.querySelector('.submit').addEventListener('click', (event)=>{
+        // event.preventDefault()
+        let value = document.querySelector('.text-area').value
+        let para = document.createElement('p')
+        const time = new Date()
+        para.textContent = `${time +" : "+ value}`
+
+        let comments = document.querySelector('.comments')
+        comments.appendChild(para)
+    }
+    )
+
+
+    // function calls
+    getRecentCocktails()
+    getPopularCocktails()
+
+    
+
 })
 
 
