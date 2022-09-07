@@ -6,7 +6,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     padding: 2%;
     display: flex;
     flex-direction: column;
@@ -43,7 +43,7 @@ body {
 
 
 .image-container {
-    display: flex;
+    display: relative;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -55,12 +55,27 @@ body {
     text-align: center;
 }
 
-img {
+.wrapping img {
     width: 300px;
-    border-radius: 50%;
-    margin: 0.5%;
-    margin-bottom: 70px;
-    padding-bottom: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    
+    
+}
+.wrapping h4 {
+    text-align: center;
+    size: 22pt;
+    
+}
+#latest, 
+#recent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
 }
 
 h1 {
@@ -74,7 +89,7 @@ h2 {
     color: red;
 }
 
-h3,
+/* h3,
 h4 {
     margin: 0.5%;
     font-size: 17px;
@@ -84,7 +99,7 @@ h4 {
     padding-bottom: 120px;
     line-height: 22px;
     color: #F3F3F3;
-}
+} */
 
 table {
     border: 1px solid #333;
@@ -114,50 +129,40 @@ td {
     text-align: center;
 }
 
-span {
-    font-size: 1.2em;
-    color: red;
-}
 
-.form {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 30px;
-}
-
-* {
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-}
-
-input[type=text]:invalid {
-    border: red solid 1px;
-}
-
-.container {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
+.container{
+        position: relative;
+        height: auto;
+        padding: 10px;
+        background-color: #DADADA;
+        border-radius: 3px;
+        border: 5px solid #ccc;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        
 }
 
 .container>label {
     text-align: center;
+    padding: 20px;
 }
 
 #comment {
-    background-color: cornflowerblue;
+    color: #797979;
+    text-align: left;
+    padding: 10px;
 }
 
 #addComments {
     width: 20%;
-    padding: 5px;
+    padding: 10px;
     background-color: darkblue;
     color: white;
     align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .wrapper>button {
@@ -165,4 +170,14 @@ input[type=text]:invalid {
     padding: 5px;
     background-color: darkblue;
     color: white;
+    margin-top: 10px;
+}
+
+.wrapping{
+    max-width: 100%;
+    background-color: aqua;
+    border-radius: 1rem;
+    box-shadow: 1px 8px 5px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 8px 5px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 8px 5px 1px rgba(0, 0, 0, 0.75);
 }
