@@ -5,11 +5,11 @@
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
   <a href="https://twitter.com/BlackHawk_254" target="_blank">
-<<<<<<< HEAD
+
     <img alt="Twitter: BlackHawk_254" src="https://img.shields.io/twitter/follow/BlackHawk_254.svg?style=social" />
-=======
+
     <img alt="Twitter: BlackHawk\_254" src="https://img.shields.io/twitter/follow/BlackHawk\_254.svg?style=social" />
->>>>>>> 23cf6cab258b22cd5883e3816f0d069cd2f6aa39
+
   </a>
   <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/b6bb3f6f00fb8fc70a4d321d89fb2299f1ff533b2d0a6876a314b513d2626765/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769746875622d626c61636b"><img src="https://camo.githubusercontent.com/b6bb3f6f00fb8fc70a4d321d89fb2299f1ff533b2d0a6876a314b513d2626765/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4769746875622d626c61636b" alt="" data-canonical-src="https://img.shields.io/badge/Github-black" style="max-width: 100%;"></a>&nbsp;&nbsp;&nbsp;
   <a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/15f187a66c79d6277d9e48d7f47b7463e6aea6e516190ba74ab4095d7e497aca/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6176615363726970742d677265656e"><img src="https://camo.githubusercontent.com/15f187a66c79d6277d9e48d7f47b7463e6aea6e516190ba74ab4095d7e497aca/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6176615363726970742d677265656e" alt="" data-canonical-src="https://img.shields.io/badge/JavaScript-green" style="max-width: 100%;"></a>&nbsp;&nbsp;&nbsp;
