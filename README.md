@@ -4,7 +4,7 @@
   <a href="https://opensource.org/osd" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
-  <a href="https://twitter.com/BlackHawk\_254" target="_blank">
+  <a href="https://twitter.com/BlackHawk_254" target="_blank">
     <img alt="Twitter: BlackHawk\_254" src="https://img.shields.io/twitter/follow/BlackHawk\_254.svg?style=social" />
   </a>
 </p>
