@@ -145,6 +145,7 @@ textarea {
 .submit {
     border-radius: 7px;
     padding: 10px;
+    background-color: chocolate;
 
 }
 
