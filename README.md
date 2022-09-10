@@ -14,7 +14,8 @@
 
 ### 🏠 [Homepage](https://blackhawk0.github.io/cocktail-planent/)
 
-### ✨ [Demo](https://blackhawk0.github.io/cocktail-planent/)
+### ✨ [Live Link](https://blackhawk0.github.io/cocktail-planent/)
+https://blackhawk0.github.io/cocktail-planent/
 
 ## Install
 
