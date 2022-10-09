@@ -27,7 +27,8 @@ git clone https://github.com/BlackHawk0/cocktail-planent.git
 
 ```sh
 cd cocktail-planent
-explorer.exe index.html
+npm install
+npm start 
 ```
 
 
